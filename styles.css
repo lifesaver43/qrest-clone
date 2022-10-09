@@ -77,6 +77,7 @@ section {
     top: 15em;
     padding: 2em;
     display: flex;
+    margin-bottom: 18em;
 }
 
 .hero {
@@ -133,3 +134,54 @@ section {
     right: -60%;
     border: none;
 }
+
+.below-slant {
+    margin-top: 4em;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    background: cyan;
+    padding: 1.5em 0;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+/* .below-slant::before {
+    content: '';
+    border: 2px solid black;
+} */
+
+.second-hero {
+    display: flex;
+    text-align: center;
+}
+
+.second-hero div:first-child {
+    background-color: #81836C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid black;
+}
+
+.second-hero div:last-child {
+    background-color: #497775;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid black;
+}
+
+.second-hero img {
+    width: 8em;
+    height: auto;
+}
+
+.second-hero p {
+    max-width: 60%;
+}
+
+
