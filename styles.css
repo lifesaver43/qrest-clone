@@ -152,9 +152,12 @@ section {
     border: 2px solid black;
 } */
 
+/* SECOND HERO */
+
 .second-hero {
     display: flex;
     text-align: center;
+    border-bottom: 1px solid black;
 }
 
 .second-hero div:first-child {
@@ -164,6 +167,8 @@ section {
     justify-content: center;
     align-items: center;
     border-right: 1px solid black;
+    padding: 3em 0;
+    gap: 2em;
 }
 
 .second-hero div:last-child {
@@ -173,15 +178,131 @@ section {
     justify-content: center;
     align-items: center;
     border-left: 1px solid black;
+    padding: 3em 0;
+    gap: 2em;
 }
 
 .second-hero img {
-    width: 8em;
+    width: 25em;
     height: auto;
+}
+
+.second-hero div:last-child img {
+    width: 50%;
+}
+
+.second-hero h2 {
+    font-size: 2.5em;
 }
 
 .second-hero p {
     max-width: 60%;
 }
+
+/* BELOW SECOND */
+.below-second {
+    color: black;
+    background-color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+    padding: 4.5em 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    font-size: 1.2em;
+}
+
+
+/* THIRD HERO */
+
+.third-hero {
+    display: flex;
+    text-align: center;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.third-hero div:first-child {
+    background-color: #FFF804;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid black;
+    padding: 4em 0;
+    gap: 2em;
+    width: 50%;
+}
+
+.third-hero div:last-child {
+    background-color: #81836C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid black;
+    padding: 4em 0;
+    gap: 2em;
+    width: 50%;
+}
+
+.third-hero img {
+    width: 35em;
+    height: auto;
+}
+
+.third-hero div:last-child img {
+    width: 70%;
+}
+
+.third-hero h2 {
+    font-size: 2.5em;
+}
+
+.third-hero p {
+    max-width: 60%;
+}
+
+.third-hero button {
+    color: white;
+    background-color: black;
+    border-radius: 1.5em;
+    padding: 1em 4em;
+    font-size: 1.05em;
+    font-weight: bold;
+}
+
+/* UTILITY CLASS FOR TOP HERO P */
+.top-p {
+    background-color: white;
+    border: 2px solid black;
+    font-size: 0.9em;
+    font-weight: bolder;
+    padding: 0.5em;
+}
+
+.below-third {
+    color: white;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    padding: 4.5em 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.below-third p:last-child a {
+    text-decoration: underline;
+    color: white;
+    font-size: 0.8em;
+} 
+
+.below-third p:first-child {
+    max-width: 50%;
+    text-align: left;
+} 
+
 
 
