@@ -304,5 +304,53 @@ section {
     text-align: left;
 } 
 
+/* FEATURES SECTION */
+.features {
+    display: flex;
+    justify-content: space-evenly;
+}
 
+.accordion {
+    min-width: 35%;
+    border: 2px solid black;
+}
 
+.accordion ul h3 {
+    border: 1px solid black;
+    color: white;
+    background: black;
+}
+
+.accordion ul li {
+    border: 1px solid black;
+    padding: 2em;
+}
+
+.accordion ul li * + * {
+    margin-top: 1em;
+}
+
+.accordion ul {
+    /* max-width: 800px; */
+}
+
+.accordion ul .list {
+    position: relative;
+}
+
+.accordion .label {
+    position: relative;
+    cursor: pointer;
+}
+
+.accordion ul .list .content {
+    position: relative;
+    display: none;
+    overflow: hidden;
+    transition: 0.5s ease;
+    overflow-y: auto;
+}
+
+.accordion .list.active .content {
+    display: block;
+}
