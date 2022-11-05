@@ -169,6 +169,7 @@ section {
     border-right: 1px solid black;
     padding: 3em 0;
     gap: 2em;
+    width: 50%;
 }
 
 .second-hero div:last-child {
@@ -180,6 +181,7 @@ section {
     border-left: 1px solid black;
     padding: 3em 0;
     gap: 2em;
+    width: 50%;
 }
 
 .second-hero img {
@@ -308,17 +310,73 @@ section {
 .features {
     display: flex;
     justify-content: space-evenly;
+    padding: 2em;
 }
 
+.features div:first-child {
+    margin: 5em;
+}
+
+.features div:first-child {
+    max-width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+}
+
+.features div:first-child h2 {
+    font-size: 2.4em;
+}
+
+.features div:first-child p:nth-child(4) {
+    margin: 2em 0;
+    font-weight: lighter;
+    font-size: 1.1em;
+    max-width: 80%;
+}
+
+.features div:first-child img {
+    transform: rotate(-6deg);
+    transform-origin: bottom-left;
+    border: 0.2rem solid #012734;
+    width: 60%;
+    height: auto;
+}
+
+.features div:first-child p:first-child {
+    border: 0.15rem solid #012734;
+    font-size: 0.8em;
+    font-weight: bolder;
+    width: 10em;
+    padding: 0.5em;
+}
+
+.features div:first-child button {
+    border: 0.15rem solid #012734;
+    border-radius: 2em;
+    padding: 1em 5em;
+    font-size: 1em;
+    font-weight: bolder;
+    background-color: white;
+}
+
+/* Accordion */
+
 .accordion {
-    min-width: 35%;
+    min-width: 40%;
     border: 2px solid black;
+    margin: 2.5em 2.5em 0 0;
+    height: fit-content;
 }
 
 .accordion ul h3 {
     border: 1px solid black;
     color: white;
     background: black;
+    padding: 1.3em 0 1.3em 0.8em;
+    font-size: 1.7em;
 }
 
 .accordion ul li {
@@ -351,6 +409,145 @@ section {
     overflow-y: auto;
 }
 
+.accordion ul .list > p {
+    font-weight: bold;
+}
+
 .accordion .list.active .content {
     display: block;
+}
+
+.accordion .list.active {
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.accordion .list.active .content p {
+    max-width: 450px;
+}
+
+/* BRANDS */
+.brands {
+    display: flex;
+    text-align: center;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.brands > .retail {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid black;
+    padding: 4em 0;
+    gap: 2em;
+    width: 50%;
+}
+
+.brands > .retail p:first-child {
+    color: black;
+}
+
+.brands > .support {
+    background-color: #E280FF;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid black;
+    padding: 4em 0;
+    gap: 2em;
+    width: 50%;
+}
+
+.brands h2 {
+    font-size: 2.5em;
+}
+
+.brands p {
+    max-width: 60%;
+}
+
+.brands button {
+    color: white;
+    background-color: black;
+    border-radius: 1.5em;
+    padding: 1em 3em;
+    font-size: 1.05em;
+    font-weight: bold;
+}
+
+.brands > .retail button {
+    border: 2px solid white;
+}
+
+/* COMMUNITY */
+.community {
+    background-color: #ffff;
+    display: flex;
+    text-align: center;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4em 0;
+    gap: 2em;
+}
+
+.community button {
+    color: black;
+    background-color: white;
+    border-radius: 1.5em;
+    padding: 0.7em 4em;
+    font-size: 1.05em;
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+.community h2 {
+    font-size: 2.5em;
+}
+
+.community p:nth-child(3) {
+    font-size: 1.2em;
+}
+
+/* ARTISTS */
+.artists {
+    height: 80vh;
+}
+
+.artists > .yellow {
+    display: flex;
+    max-height: 90vh;
+}
+
+.yellow div:first-child {
+    background-color: yellow;
+    padding: 3em;
+    width: 50%;
+    border-right: 1px solid black;
+}
+
+.yellow img {
+    width: 50%;
+    border-left: 1px solid black;
+    object-fit: cover;
+}
+
+.yellow .top-p {
+    width: fit-content;
+}
+
+.yellow div:first-child p:last-child {
+    margin-top: 9em;
+    font-size: 1.7em;
+    font-weight: lighter;
+    width: 80%;
 }
