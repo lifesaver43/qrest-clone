@@ -551,3 +551,35 @@ section {
     font-weight: lighter;
     width: 80%;
 }
+
+/* orange */
+
+.artists > .orange {
+    display: flex;
+    max-height: 90vh;
+}
+
+.orange div:first-child {
+    background-color: orange;
+    padding: 3em;
+    width: 50%;
+    border-right: 1px solid black;
+}
+
+.orange img {
+    width: 50%;
+    border-left: 1px solid black;
+    object-fit: cover;
+}
+
+.orange .top-p {
+    width: fit-content;
+}
+
+.orange div:first-child p:last-child {
+    margin-top: 9em;
+    font-size: 1.7em;
+    font-weight: lighter;
+    width: 80%;
+}
+
