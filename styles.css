@@ -583,3 +583,26 @@ section {
     width: 80%;
 }
 
+/* STUDIO */
+.studio {
+    background-color: black;
+    color: white;
+    display: flex;
+    text-align: center;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4em 0;
+    gap: 2em;
+}
+
+.studio > .top-p {
+    color: black;
+    border: 2px solid white;
+    font-size: 0.9em;
+    font-weight: bolder;
+    padding: 0.5em;
+}
+
